@@ -9,7 +9,11 @@
 
 ## Полезные ссылки
 Чтобы узнать больше о синтаксисе Markdown, вы можете обратиться к следующим ссылкам:
-
     - [Официальная страница Markdown](https://daringfireball.net/projects/markdown/)
     - [Основной синтаксис Markdown](https://www.markdownguide.org/basic-syntax/)
+
+Кроме того, вы можете найти более подробный список функций синтаксиса Markdown по адресу:
+- [Полное руководство по синтаксису Markdown](https://www.markdownguide.org/extended-syntax/)
+
+
 
