@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Reem+Kufi:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
@@ -12,42 +17,46 @@
 
         <!-- Basic user Information -->
         <fieldset>
-            <legend>Basic User Information:</legend>
+            <legend> Basic User Information: </legend>
 
-            <label for="fname">Full Name:</label>
-            <input type="text" id="fname" required><br>
+            <label for="fname"> Full Name: </label><br>
+            <input type="text" size="70" id="fname" placeholder=" Enter your Full Name" required><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" size="70" id="email" placeholder=" Enter your email" required><br>
 
-            <label for="password">Password: </label>
-            <input type="password" id="password" required>
+            <label for="password">Password: </label><br>
+            <input type="password" size="70" id="password" placeholder=" Enter your password" required><br>
 
-            <label for="cpassword">Confirm Password:</label>
-            <input type="password" id="cpassword" required><br>
+            <label for="cpassword">Confirm Password:</label><br>
+            <input type="password" size="70" id="cpassword" placeholder=" Confirm your password" required><br>
 
-            <label>Gender: </label>
-            <input type="radio" id="male" value="male">
-            <label for="male">Male</label>
 
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
+            <label>Gender: </label><br>
+            <div class="gender-field">
+                <input type="radio" id="male" name="gender" value="male">
+                <label class="labe" for="male">Male</label>
 
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" class="labe">Female</label>
 
-            <label for="birthday">Date of Birth</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" class="labe">Other</label><br>
+            </div>
+
+
+            <label for="birthday">Date of Birth</label><br>
             <input id="birthday" type="date">
         </fieldset>
         <!-- Adress Information -->
         <fieldset>
             <legend>Address Information: </legend>
 
-            <label for="street-address">Street Address: </label>
-            <textarea id="street-address" cols="15" rows="2">
+            <label for="street-address">Street Address: </label><br>
+            <textarea id="street-address" cols="70" rows="3">
             </textarea><br>
 
-            <label for="country">Country</label>
+            <label for="country">Country:</label><br>
             <select id="country">
                 <option value="usa">USA</option>
                 <option value="canada">Canada</option>
@@ -56,17 +65,17 @@
                 <option value="japan">Japan</option>
             </select><br>
 
-            <label for="city">City:</label>
-            <input type="text" id="city"><br>
+            <label class="label-city" for="city">City:</label><br>
+            <input size="73" type="text" id="city"><br>
 
-            <label for="postcode">Postal Code</label>
+            <label for="postcode">Postal Code</label><br>
             <input type="number" id="postcode">
         </fieldset>
         <!-- Preferences -->
         <fieldset>
             <legend>Preferences:</legend>
 
-            <label>Preferred Contact Method:</label>
+            <label>Preferred Contact Method:</label><br>
 
             <input type="checkbox" id="mail" value="mail">
             <label for="mail">Email</label>
@@ -84,16 +93,16 @@
         <fieldset>
             <legend>Additional Details</legend>
 
-            <label for="hear-about-us">How did you hear about us?</label>
+            <label for="hear-about-us">How did you hear about us?</label><br>
             <select id="hear-about-us">
                 <option value="internet">Internet</option>
                 <option value="friends">Friends</option>
                 <option value="adv">Advertisment</option>
                 <option value="other">Other</option>
-            </select><br>
+            </select><br><br>
 
-            <label for="feedback">Feedback/Comments:</label>
-            <textarea id="feedback" cols="24" rows="2">
+            <label for="feedback">Feedback/Comments:</label><br>
+            <textarea id="feedback" cols="70" rows="5">
             </textarea><br>
 
         </fieldset>
@@ -104,8 +113,8 @@
             <label for="prof-picture">Upload a Profile Picture: </label>
             <input id="prof-picture" type="file"><br>
 
-            <label for="web-url">Website URL: </label>
-            <input id="web-url" type="url"><br>
+            <label for="web-url">Website URL: </label><br>
+            <input id="web-url" size="70" type="url"><br>
 
             <label for="expirience">Expirience Level with HTML:</label>
             <input type="range" id="expirience" name="1one" min="0" max="10" value="5" oninput="myFunction()">
@@ -113,8 +122,8 @@
         </fieldset><br>
 
 
-        <input name="submit" type="submit">
-        <input type="reset">
+        <input class="submit-button" name="submit" type="submit">
+        <input class="reset-button" type="reset">
     </form>
 
     <script>
